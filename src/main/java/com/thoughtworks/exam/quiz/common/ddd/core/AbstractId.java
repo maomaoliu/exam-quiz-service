@@ -1,6 +1,6 @@
-package com.thoughtworks.exam.quiz.ddd.core;
+package com.thoughtworks.exam.quiz.common.ddd.core;
 
-import com.thoughtworks.exam.quiz.ddd.annotation.ValueObject;
+import com.thoughtworks.exam.quiz.common.ddd.annotation.ValueObject;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

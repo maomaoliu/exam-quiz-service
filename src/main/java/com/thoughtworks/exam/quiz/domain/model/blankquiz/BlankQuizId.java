@@ -1,7 +1,7 @@
 package com.thoughtworks.exam.quiz.domain.model.blankquiz;
 
-import com.thoughtworks.exam.quiz.ddd.annotation.ValueObject;
-import com.thoughtworks.exam.quiz.ddd.core.AbstractId;
+import com.thoughtworks.exam.quiz.common.ddd.annotation.ValueObject;
+import com.thoughtworks.exam.quiz.common.ddd.core.AbstractId;
 import lombok.EqualsAndHashCode;
 
 import java.util.UUID;

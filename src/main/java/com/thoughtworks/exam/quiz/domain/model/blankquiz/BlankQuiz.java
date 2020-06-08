@@ -1,6 +1,6 @@
 package com.thoughtworks.exam.quiz.domain.model.blankquiz;
 
-import com.thoughtworks.exam.quiz.ddd.annotation.AggregateRoot;
+import com.thoughtworks.exam.quiz.common.ddd.annotation.AggregateRoot;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
