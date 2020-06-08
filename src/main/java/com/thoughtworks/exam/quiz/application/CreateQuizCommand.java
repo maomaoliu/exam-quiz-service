@@ -1,4 +1,4 @@
-package com.thoughtworks.exam.application;
+package com.thoughtworks.exam.quiz.application;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,6 +6,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class CreateQuizCommand {
+    private String teacherId;
     private String question;
-    private String answer;
+    private Integer score;
+    private String referenceAnswer;
 }
