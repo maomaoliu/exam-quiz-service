@@ -8,8 +8,7 @@ import java.util.UUID;
 
 @ValueObject
 @EqualsAndHashCode(callSuper = true)
-public
-class BlankQuizId extends AbstractId {
+public class BlankQuizId extends AbstractId {
     public BlankQuizId(final String value) {
         super(value);
     }

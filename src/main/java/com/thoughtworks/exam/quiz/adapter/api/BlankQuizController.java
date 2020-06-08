@@ -2,7 +2,6 @@ package com.thoughtworks.exam.quiz.adapter.api;
 
 import com.thoughtworks.exam.quiz.application.BlankQuizApplicationService;
 import com.thoughtworks.exam.quiz.application.CreateQuizCommand;
-import com.thoughtworks.exam.quiz.application.DeleteQuizCommand;
 import com.thoughtworks.exam.quiz.application.UpdateQuizCommand;
 import com.thoughtworks.exam.quiz.domain.model.blankquiz.IllegalScoreException;
 import org.springframework.http.HttpStatus;
@@ -15,12 +14,6 @@ public class BlankQuizController {
 
     public BlankQuizController(BlankQuizApplicationService blankQuizApplicationService) {
         this.blankQuizApplicationService = blankQuizApplicationService;
-    }
-
-    @DeleteMapping("/{quizId}")
-    @ResponseStatus(HttpStatus.OK)
-    public void delete(@PathVariable final String quizId) {
-        blankQuizApplicationService.deleteQuiz(new DeleteQuizCommand(quizId));
     }
 
     @PostMapping

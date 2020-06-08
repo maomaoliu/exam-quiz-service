@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS `quiz`;
-CREATE TABLE `quiz` (
+CREATE TABLE `t_quiz` (
    `id` varchar2(255) NOT NULL,
    `content` varchar2(255) NOT NULL,
    `referenceAnswer` varchar2(255) NOT NULL,

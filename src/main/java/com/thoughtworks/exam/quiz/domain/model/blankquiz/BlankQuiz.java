@@ -1,15 +1,12 @@
 package com.thoughtworks.exam.quiz.domain.model.blankquiz;
 
 import com.thoughtworks.exam.quiz.common.ddd.annotation.AggregateRoot;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 @SuppressWarnings("checkstyle:magicnumber")
 @AggregateRoot
-@Data
 @AllArgsConstructor
+@Getter
 @Builder
 @EqualsAndHashCode(of = "id")
 public class BlankQuiz {
