@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "t_quiz")
@@ -18,8 +20,8 @@ public class BlankQuizEntity {
     private String referenceAnswer;
     private String teacherId;
     private int score;
-    private Timestamp createdTime;
-    private Timestamp updatedTime;
+    private LocalDateTime createdTime;
+    private LocalDateTime updatedTime;
 
     public BlankQuiz toModel() {
         return BlankQuiz.builder().id(new BlankQuizId(id))
