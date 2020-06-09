@@ -16,4 +16,9 @@ public class BlankQuizId extends AbstractId {
     public static BlankQuizId generate() {
         return new BlankQuizId(UUID.randomUUID().toString());
     }
+
+    @Override
+    public String toString() {
+        return getValue();
+    }
 }

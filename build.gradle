@@ -70,7 +70,10 @@ dependencyManagement {
 
 contracts {
     testFramework = org.springframework.cloud.contract.verifier.config.TestFramework.JUNIT5
-    failOnNoContracts = false
+    packageWithBaseClasses = 'com.thoughtworks.exam.quiz'
+    baseClassMappings {
+        baseClassMapping(".*blankQuiz.*", "com.thoughtworks.exam.quiz.BlankQuizBase")
+    }
 }
 
 test {

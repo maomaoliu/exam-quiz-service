@@ -2,10 +2,10 @@ DROP TABLE IF EXISTS `quiz`;
 CREATE TABLE `t_quiz` (
    `id` varchar2(255) NOT NULL,
    `content` varchar2(255) NOT NULL,
-   `referenceAnswer` varchar2(255) NOT NULL,
-   `score` smallint NOT NULL,
-   `teacherId` varchar2(255) NOT NULL,
-   `createTime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-   `updateTime` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   `reference_answer` varchar2(255) NOT NULL,
+   `score` int NOT NULL,
+   `teacher_id` varchar2(255) NOT NULL,
+   `created_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   `updated_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
    PRIMARY KEY (`id`)
 );

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class BlankQuizApplicationService {
-    private final BlankQuizJPARepository blankQuizRepository;
+    private BlankQuizJPARepository blankQuizRepository;
 
     public BlankQuizId createQuiz(final CreateQuizCommand command) throws IllegalScoreException {
         BlankQuiz blankQuiz = BlankQuiz.create(command.getTeacherId(), command.getQuestion(),
