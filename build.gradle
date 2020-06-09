@@ -30,7 +30,7 @@ ext {
 }
 
 bootJar {
-    archiveFileName = 'contract-provider'
+    archiveFileName = 'exam-quiz-service'
     archiveVersion = '0.0.1-SNAPSHOT'
 }
 
