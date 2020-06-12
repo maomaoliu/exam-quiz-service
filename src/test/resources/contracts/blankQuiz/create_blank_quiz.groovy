@@ -12,10 +12,10 @@ Contract.make {
             contentType applicationJson()
         }
         body(
-                teacherId: producer(regex('[a-zA-Z0-9]{36}')),
-                question: producer(regex('.{1,255}')),
-                score: producer(anyNumber()),
-                referenceAnswer: producer(regex('.{1,4000}'))
+                teacherId: $(consumer(regex('[a-zA-Z0-9]{36}'))),
+                question: $(consumer(regex('.{1,255}'))),
+                score: $(anyNumber()),
+                referenceAnswer: $(consumer(regex('.{1,4000}')))
         )
     }
 
@@ -25,7 +25,7 @@ Contract.make {
             contentType applicationJson()
         }
         body(
-                blankQuizId: "90fdknaf09fopfkmald"
+                blankQuizId: $(producer(regex('[a-zA-Z0-9]{19}')), consumer('90fdknaf09fop5hmald'))
         )
     }
 }

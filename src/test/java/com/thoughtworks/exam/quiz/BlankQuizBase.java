@@ -31,7 +31,7 @@ public abstract class BlankQuizBase {
         RestAssuredMockMvc.standaloneSetup(blankQuizController);
 
         Mockito.when(quizApplicationService.createQuiz(any(CreateQuizCommand.class)))
-                .thenReturn(new BlankQuizId("90fdknaf09fopfkmald"));
+                .thenReturn(new BlankQuizId("90fdknaf09fop5hmald"));
     }
 
 }
