@@ -17,7 +17,7 @@ public class BlankQuizController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BlankQuizDTO create(@RequestBody final CreateQuizCommand command) throws IllegalScoreException {
+    public BlankQuizDTO create(@RequestBody CreateQuizCommand command) throws IllegalScoreException {
         return BlankQuizDTO.from(blankQuizApplicationService.createQuiz(command).toString());
     }
 }
