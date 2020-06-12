@@ -12,10 +12,10 @@ Contract.make {
             contentType applicationJson()
         }
         body(
-                teacherId: "sjyuan",
-                question: "防腐测试是什么？",
-                score: 5,
-                referenceAnswer: "防腐测试是为了及时预警第三方API的破坏，防止因反馈的缺失而继续发生腐化的测试"
+                teacherId: regex('[a-zA-Z0-9]{36}'),
+                question: regex('.{1,255}'),
+                score: anyNumber(),
+                referenceAnswer: regex('.{1,4000}')
         )
     }
 
