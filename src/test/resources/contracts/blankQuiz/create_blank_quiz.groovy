@@ -3,7 +3,7 @@ package blankQuiz
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
-    description "should return person by id=1"
+    description "should create a blank quiz"
 
     request {
         url "/quizzes"
@@ -13,9 +13,9 @@ Contract.make {
         }
         body(
                 teacherId: 1,
-                question: "TDD是什么？",
+                question: "防腐测试是什么？",
                 score: 5,
-                referenceAnswer: "Test-Driven Development"
+                referenceAnswer: "防腐测试是为了及时预警第三方API的破坏，防止因反馈的缺失而继续发生腐化的测试"
         )
     }
 
